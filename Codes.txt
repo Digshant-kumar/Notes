@@ -1,0 +1,95 @@
+*****************************************************************************REACT**************************************************************************
+
+
+create a folder
+npm i -g bun
+bun create vite
+give project name
+choose React
+choose script
+cd project_name
+bun install
+bun run dev / bun dev
+
+go to dependencies - remove both react and react-dom
+bun install react@rc
+bun install react-dom@rc
+
+React Fragment :-
+export const App = () =>{
+	return (
+		<>	->	Inside return we can only write one element because jsx returns object and we cant send multiple objects at a time so we use 				react fragment and wrap all the jsx elements in it.
+		</>	->	(This is sugar form to use react fragment).
+	);
+}
+
+
+If we write default export component_name; -> we can import it using any name like -> import comp_name from "./components/component_name"
+
+Only default exports can be imported as -> import comp_name from "./components/comp_name"
+if we do named export like export const comp_name = () =>{}	->	we have to import using {}   ->   import {comp_name} from "./components/comp_name"
+and we cannot change name while importing using named export.
+A file can have only 1 default export but can have multiple named exports.
+But we can use named and default export in single file but default export can be written only 1 time.
+
+For looping in JSX we use use.map() method. We do not have for loops in JSX.
+
+
+
+<Series data={data} />	->   here data(this is called props/property) = {data}
+
+
+
+import imported_comp_name from "../api/imported_comp_name.json"
+const comp_name = () => {
+	return (
+		<ul>
+			{imported_comp_name.map((data) => {
+				return(
+					<li key={data.id}>
+					</li>
+			);
+			})}
+		</ul>
+	);
+}
+
+
+
+We can access classname with hyphen(-) using square brackets([])	->	{styles.card-content} is wrong
+									->	{styles["card-content"]} is right
+
+
+
+**************************************************************************GIT*******************************************************************************
+
+
+
+Upload project in GitHub :-
+git init
+git remote add origin <repository-link>
+git add .
+git commit -m "First Push in Git"
+git push -u origin main		or	git push -u origin master
+
+
+
+
+
+***********************************************************************JavaScript***************************************************************************
+
+
+
+
+
+
+Variable name	->	Starts with	->	letter, underscore(_), dollar sign($)
+		->	Cannot use any reserved keyword like (while, if, else, do, in, case, try, etc.)
+		->	Cannot contain any space ( )
+		->	They are case sensitive (as it is should be used wherever required) (A != a)
+		->	By convention the variable names are written in (camelCase)
+		->	They can be as long as you need to write them
+
+
+
+
