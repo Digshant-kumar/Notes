@@ -95,8 +95,8 @@ Variable name	->	Starts with	->	letter, underscore(_), dollar sign($)
 Data Types	->	Primitive Data Type	->	1 - String
 						->	2 - Number
 						->	3 - Boolean
-						->	4 - Undefine
-						->	5 - Null
+						->	4 - Undefine	->	A box that wasn't open
+						->	5 - Null	->	A box that is empty
 						->	6 - Bigint
 						->	7 - Symbol
 
@@ -106,10 +106,24 @@ Data Types	->	Primitive Data Type	->	1 - String
 
 
 
+Primitive Data Types			->	They are immutable(cannot be changed) and are stored by value.
+Non - Primitive Data Types(objects)	->	They are mutable(can be changed) and are stored by reference.
 
 
+String to number	->	var myFavNumber = "10";
+			->	console.log(typeof +myFavNumber);
+			->	console.log(typeof Number(myFavNumber));
+			->	console.log(+myFavNumber);
+			->	console.log(Number(myFavNumber));
 
 
+number to string	->	let str = 5;
+			->	console.log(typeof String(str));
+			->	console.log(typeof (str + ""));
+
+
+Coercion	->	explicitly JS automatically do conversion	->	console.log(5 - "2")	->	result = 3
+								but	->	console.log(5 + "2")	->	result = 52
 
 
 
