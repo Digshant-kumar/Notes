@@ -89,6 +89,26 @@ Variable name	->	Starts with	->	letter, underscore(_), dollar sign($)
 		->	They are case sensitive (as it is should be used wherever required) (A != a)
 		->	By convention the variable names are written in (camelCase)
 		->	They can be as long as you need to write them
+		->	Any special character except ($, _, letters, numbers) cannot be used in a variable name
+
+
+Data Types	->	Primitive Data Type	->	1 - String
+						->	2 - Number
+						->	3 - Boolean
+						->	4 - Undefine
+						->	5 - Null
+						->	6 - Bigint
+						->	7 - Symbol
+
+		->	Object Data Type	->	1 - An Object
+						->	2 - An Array
+						->	3 - A Date
+
+
+
+
+
+
 
 
 
