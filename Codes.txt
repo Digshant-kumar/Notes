@@ -126,4 +126,14 @@ Coercion	->	explicitly JS automatically do conversion	->	console.log(5 - "2")	->
 								but	->	console.log(5 + "2")	->	result = 52
 
 
+Types Of Operators	->	1. Assignment
+				2. Arithmetic
+				3. Comparison
+				4. Logical
+				5. String
+				6. Unary
+				7. Ternary/Conditional
+				8. Type
 
+var res = 0.1+0.2
+console.log(res)	->	0.300000000000004	->	Due to binary conversion during runtime
