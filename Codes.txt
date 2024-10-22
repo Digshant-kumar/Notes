@@ -95,8 +95,8 @@ Variable name	->	Starts with	->	letter, underscore(_), dollar sign($)
 Data Types	->	Primitive Data Type	->	1 - String
 						->	2 - Number
 						->	3 - Boolean
-						->	4 - Undefine	->	A box that wasn't open
-						->	5 - Null	->	A box that is empty
+						->	4 - Undefine	->	A container that wasn't open
+						->	5 - Null	->	A container that is empty
 						->	6 - Bigint
 						->	7 - Symbol
 
@@ -136,4 +136,10 @@ Types Of Operators	->	1. Assignment
 				8. Type
 
 var res = 0.1+0.2
-console.log(res)	->	0.300000000000004	->	Due to binary conversion during runtime
+console.log(res)		->	0.300000000000004	->	Due to binary conversion during runtime
+console.log(res.toFixed(2))	->	0.30
+
+
+Ques.	->	console.log(2 < 12 < 5)		->	True
+		2 < 12		->	True
+		True < 5	->	1<5	->	True
