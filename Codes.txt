@@ -143,3 +143,86 @@ console.log(res.toFixed(2))	->	0.30
 Ques.	->	console.log(2 < 12 < 5)		->	True
 		2 < 12		->	True
 		True < 5	->	1<5	->	True
+
+
+
+Example Ques : Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
+
+var userInput;
+var positiveNumber;
+do {
+  userInput = prompt("Enter a positive number");
+  positiveNumber = parseFloat(userInput);
+} while (isNaN(positiveNumber) || positiveNumber < 0);
+
+console.log(`You Entered ${positiveNumber} which is a positive number`);
+
+
+
+
+Infinite For Loop	->	for( ; ; )
+
+
+
+
+Drawing Patterns with Asterisks :
+
+for (var i = 1; i <= 5; i++) {
+  var pattern = "";
+  for (var j = 1; j <= i; j++) {
+    pattern = pattern + "* ";
+  }
+  console.log(pattern);
+}
+
+
+
+program To check if a year is a leap year🧑‍💻
+
+var year = 2300;
+
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+  console.log(`Year ${year} is a leap year`);
+} else {
+  console.log(`Year ${year} is not a leap year`);
+}
+
+
+
+function sum(a, b)		->	(a, b) are PARAMETER
+{
+	return a + b;
+}
+
+console.log(sum(5,10));		->	(5, 10) are ARGUMENT
+
+
+
+
+
+IIFE(Immediate Invoked Function Expression) :-
+
+var res = (function (a, b) {
+  console.log(a + b);
+  return a + b;
+})(2, 4);
+
+console.log(`The sum is ${res}`);
+
+
+
+
+
+
+Fat Arrow Function :-
+
+const sum = (a,b) => {
+	return a+b;
+}
+
+console.log(sum(5,10))
+
+
+
+
+
